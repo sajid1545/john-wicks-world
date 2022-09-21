@@ -15,14 +15,13 @@ const Gun = (props) => {
 						{name}
 						<div className="badge badge-secondary">NEW</div>
 					</h2>
-					<p>If a dog chews shoes whose shoes does he choose?</p>
 					<div className="card-actions">
-						<div className="badge badge-outline">Fashion</div>
-						<div className="badge badge-outline">Products</div>
+                        <div className="badge badge-outline">{ bullet }</div>
+                        <div className="badge badge-outline">{ action }</div>
                     </div>
                     <div className='flex justify-between mt-5'>
-                    <button className="btn btn-primary">Details</button>
-                    <button className="btn btn-secondary">Add to Cart</button>
+                    <button className="btn btn-outline btn-primary">Details</button>
+                    <button onClick={props.count} className="btn btn-outline btn-secondary">Add to Cart</button>
                     </div>
 				</div>
 			</div>
