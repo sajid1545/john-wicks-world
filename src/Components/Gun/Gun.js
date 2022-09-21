@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import Modal from '../Modal/Modal';
 
 const Gun = (props) => {
+	const [data, setData] = useState(null);
 	const { img, name, bullet, action } = props.gun;
-    const [data, setData] = useState(null);
+
 	return (
 		<div>
 			<div className="card w-96 bg-base-100 shadow-2xl shadow-slate-600 p-5 border-b-4 border-stone-900">
